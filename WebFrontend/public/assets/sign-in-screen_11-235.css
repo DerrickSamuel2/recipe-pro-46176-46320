@@ -1,0 +1,299 @@
+@import url("./common.css");
+
+#sign-in-screen {
+  width: 375px;
+  height: 812px;
+}
+
+#status-bar {
+  position: absolute;
+  left: 0px;  /* 426 - 426 */
+  top: 0px;   /* -430 - (-430) */
+  width: 375px;
+  height: 44px;
+}
+
+#status-bar .time {
+  position: absolute;
+  left: 30px; /* 455.5 - 426 = 29.5 -> rounded 30 */
+  top: 14px;  /* -416 - (-430) = 14 */
+  font-family: var(--typo-67-family);
+  font-size: var(--typo-67-size);
+  font-weight: var(--typo-67-weight);
+  line-height: var(--typo-67-line-height);
+  color: var(--typo-67-color);
+}
+
+#title-group {
+  position: absolute;
+  left: 30px;  /* 456-426 */
+  top: 94px;   /* -336 - (-430) */
+  width: 155px;
+  height: 75px;
+}
+
+#title-hello {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 84px;
+  height: 45px;
+  font-family: var(--typo-60-family);
+  font-size: var(--typo-60-size);
+  font-weight: var(--typo-60-weight);
+  line-height: var(--typo-60-line-height);
+  color: var(--typo-60-color);
+}
+
+#title-welcome {
+  position: absolute;
+  left: 0px;
+  top: 45px;
+  width: 155px;
+  height: 30px;
+  font-family: var(--typo-61-family);
+  font-size: var(--typo-61-size);
+  font-weight: var(--typo-61-weight);
+  line-height: var(--typo-61-line-height);
+  color: var(--typo-61-color);
+}
+
+.input-field {
+  position: absolute;
+  width: 315px;
+  height: 81px;
+}
+
+#input-email {
+  left: 30px;  /* 456-426 */
+  top: 226px;  /* -204 - (-430) */
+}
+
+#input-password {
+  left: 30px;
+  top: 337px;  /* -93 - (-430) */
+}
+
+.input-rect {
+  position: absolute;
+  left: 0px;
+  top: 26px; /* rectangle y minus parent y */
+  width: 315px;
+  height: 55px;
+  border: var(--style-30-border-width) solid var(--style-30-border-color);
+  border-radius: var(--style-30-radius);
+  background: transparent;
+}
+
+.input-label {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-family: var(--typo-66-family);
+  font-size: var(--typo-66-size);
+  font-weight: var(--typo-66-weight);
+  line-height: var(--typo-66-line-height);
+  color: var(--typo-66-color);
+}
+
+.input-placeholder {
+  position: absolute;
+  left: 20px; /* 476 - 456 */
+  top: 45px;  /* placeholder y - parent y */
+  font-family: var(--typo-65-family);
+  font-size: var(--typo-65-size);
+  font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line-height);
+  color: var(--typo-65-color);
+}
+
+.input-real {
+  position: absolute;
+  left: 12px;
+  top: 32px;
+  width: 291px; /* 315 - padding */
+  height: 43px; /* inside 55 rect */
+  border: none;
+  outline: none;
+  font-family: var(--typo-66-family);
+  font-size: 14px;
+  color: var(--color-121212);
+  background: transparent;
+}
+
+#forgot-password {
+  position: absolute;
+  left: 40px;  /* 466-426 */
+  top: 438px;  /* 8 - (-430) */
+  width: 97px;
+  height: 17px;
+  font-family: var(--typo-62-family);
+  font-size: var(--typo-62-size);
+  font-weight: var(--typo-62-weight);
+  line-height: var(--typo-62-line-height);
+  color: var(--typo-62-color);
+  cursor: pointer;
+}
+
+#cta-button {
+  position: absolute;
+  left: 30px; /* 456-426 */
+  top: 480px; /* 50 - (-430) */
+  width: 315px;
+  height: 60px;
+  background-color: var(--style-11-bg);
+  border-radius: var(--style-11-radius);
+}
+
+#cta-label {
+  position: absolute;
+  left: 85px; /* 541-456 */
+  top: 18px;  /* 68-50 */
+  font-family: var(--typo-58-family);
+  font-size: var(--typo-58-size);
+  font-weight: var(--typo-58-weight);
+  line-height: var(--typo-58-line-height);
+  color: var(--typo-58-color);
+}
+
+#cta-arrow {
+  position: absolute;
+  left: 210px; /* 666-456 */
+  top: 20px;   /* 70-50 */
+  width: 20px;
+  height: 20px;
+}
+#cta-arrow::before, #cta-arrow::after {
+  content: "";
+  position: absolute;
+  background: var(--color-ffffff);
+  display: block;
+}
+#cta-arrow::before { /* shaft */
+  width: 14px;
+  height: 2px;
+  left: 3px;
+  top: 9px;
+}
+#cta-arrow::after { /* head */
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--color-ffffff);
+  border-right: 2px solid var(--color-ffffff);
+  transform: rotate(45deg);
+  right: 2px;
+  top: 6px;
+  background: transparent;
+}
+
+#or-line-group {
+  position: absolute;
+  left: 90px;  /* 516-426 */
+  top: 560px;  /* 130-(-430) */
+  width: 195px;
+  height: 17px;
+}
+
+.or-line {
+  position: absolute;
+  height: 1px;
+  background-color: var(--style-28-bg);
+}
+#or-line-left {
+  left: 0px; /* 516-516 within group */
+  top: 9px;  /* 139-130 */
+  width: 50px;
+}
+#or-line-right {
+  left: 145px; /* 661-516 */
+  top: 9px;    /* 139-130 */
+  width: 50px;
+}
+#or-text {
+  position: absolute;
+  left: 57px; /* 573-516 */
+  top: 0px;   /* 130-130 */
+  font-family: var(--typo-64-family);
+  font-size: var(--typo-64-size);
+  font-weight: var(--typo-64-weight);
+  line-height: var(--typo-64-line-height);
+  color: var(--typo-64-color);
+}
+
+.social-btn {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-color: var(--style-126-bg);
+  border-radius: var(--style-126-radius);
+  box-shadow: var(--shadow-0);
+  overflow: hidden;
+}
+
+#btn-google {
+  left: 131px; /* 557-426 */
+  top: 597px;  /* 167-(-430) */
+}
+
+#btn-fb {
+  left: 200px; /* 626-426 */
+  top: 597px;  /* 167-(-430) */
+}
+
+#google-icon {
+  position: absolute;
+  left: 10px; /* 567-557 */
+  top: 10px;  /* 177-167 */
+  width: 24px;
+  height: 24px;
+}
+
+.g-seg1, .g-seg2, .g-seg3, .g-seg4 {
+  position: absolute;
+  image-rendering: -webkit-optimize-contrast;
+}
+.g-seg1 { left: 2px; top: 2px; width: 20px; height: 20px; background: var(--color-ffc107); border-radius: 2px; opacity: 0.98; }
+.g-seg2 { left: 3.153px; top: 2px; width: 15.656px; height: 7.755px; background: var(--color-ff3d00); }
+.g-seg3 { left: 3.097px; top: 14.027px; width: 15.607px; height: 7.973px; background: var(--color-4caf50); }
+.g-seg4 { left: 12px; top: 10px; width: 10px; height: 9.414px; background: var(--color-1976d2); }
+
+#fb-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: var(--color-1976d2); /* approx Facebook icon main color */
+  opacity: 0.9;
+}
+
+#signup-text {
+  position: absolute;
+  left: 99px;  /* 525-426 */
+  top: 696px;  /* 266-(-430) */
+  width: 177px;
+  height: 17px;
+  font-family: var(--typo-63-family);
+  font-size: var(--typo-63-size);
+  font-weight: var(--typo-63-weight);
+  line-height: var(--typo-63-line-height);
+  color: var(--typo-63-color);
+}
+
+#home-indicator {
+  position: absolute;
+  left: 0px;   /* 426-426 */
+  top: 778px;  /* 348-(-430) */
+  width: 375px;
+  height: 34px;
+}
+#home-indicator-line {
+  position: absolute;
+  left: 120px; /* 546-426 */
+  top: 21px;   /* 369-348 */
+  width: 135px;
+  height: 5px;
+  background: var(--style-32-bg);
+  border-radius: var(--style-32-radius);
+}

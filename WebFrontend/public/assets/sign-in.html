@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" href="./sign-in-screen_11-235.css">
+  <style>
+    /* Center the 375x812 frame for larger viewports */
+    body { margin: 0; background: #f4f6f8; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  </style>
+</head>
+<body>
+  <!-- Import the extracted screen content -->
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!-- Using the previously extracted HTML structure -->
+  <!-- Begin included content -->
+  <div id="sign-in-screen" class="screen" role="main" aria-label="Sign In Screen">
+    <div id="status-bar" aria-hidden="true">
+      <span class="time">19:27</span>
+    </div>
+    <div id="title-group">
+      <div id="title-hello">Hello,</div>
+      <div id="title-welcome">Welcome Back!</div>
+    </div>
+    <div id="input-email" class="input-field">
+      <div class="input-label">Email</div>
+      <div class="input-rect" aria-hidden="true"></div>
+      <div class="input-placeholder">Enter Email</div>
+      <input class="input-real" type="email" name="email" autocomplete="email" aria-label="Email">
+    </div>
+    <div id="input-password" class="input-field">
+      <div class="input-label">Enter Password</div>
+      <div class="input-rect" aria-hidden="true"></div>
+      <div class="input-placeholder">Enter Password</div>
+      <input class="input-real" type="password" name="password" autocomplete="current-password" aria-label="Password">
+    </div>
+    <div id="forgot-password" tabindex="0" role="button" aria-label="Forgot Password">Forgot Password?</div>
+    <button id="cta-button" type="button" aria-label="Sign In">
+      <span id="cta-label">Sign In</span>
+      <span id="cta-arrow" aria-hidden="true"></span>
+    </button>
+    <div id="or-line-group" aria-hidden="true">
+      <div id="or-line-left" class="or-line"></div>
+      <div id="or-line-right" class="or-line"></div>
+      <div id="or-text">Or Sign in With</div>
+    </div>
+    <button id="btn-google" class="social-btn" type="button" aria-label="Sign in with Google">
+      <div id="google-icon" aria-hidden="true">
+        <div class="g-seg1"></div>
+        <div class="g-seg2"></div>
+        <div class="g-seg3"></div>
+        <div class="g-seg4"></div>
+      </div>
+    </button>
+    <button id="btn-fb" class="social-btn" type="button" aria-label="Sign in with Facebook">
+      <div id="fb-icon" aria-hidden="true"></div>
+    </button>
+    <div id="signup-text">Don’t have an account? Sign up</div>
+    <div id="home-indicator" aria-hidden="true">
+      <div id="home-indicator-line"></div>
+    </div>
+  </div>
+  <!-- End included content -->
+  <script src="./app.js"></script>
+</body>
+</html>

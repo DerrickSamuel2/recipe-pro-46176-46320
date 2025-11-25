@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search</title>
+  <meta name="viewport" content="width=375, initial-scale=1.0">
+  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" href="./search-screen_35-432.css">
+  <style>
+    body { margin: 0; background: #f4f6f8; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  </style>
+</head>
+<body>
+  <!-- Begin included Search screen -->
+  <div id="screen-search" class="screen search-screen" style="width:375px;height:812px;border-radius: var(--style-10-radius); position: relative;">
+    <div class="status-bar" style="position:absolute; left:0px; top:0px; width:375px; height:44px; z-index: 10;">
+      <div class="time-text" style="position:absolute; left:29.5px; top:14px;">19:27</div>
+      <div class="status-symbols" style="position:absolute; left:293.5px; top:16.6px; width:68px; height:13px;">
+        <div style="position:absolute; left:0px; top:6.3px; width:3px; height:4px; background: var(--style-35-bg);"></div>
+        <div style="position:absolute; left:4.8px; top:4.3px; width:3px; height:6px; background: var(--style-35-bg);"></div>
+        <div style="position:absolute; left:9.4px; top:2px; width:3px; height:8.3px; background: var(--style-35-bg);"></div>
+        <div style="position:absolute; left:14.1px; top:0px; width:3px; height:10.7px; background: var(--style-35-bg);"></div>
+        <div style="position:absolute; left:22.1px; top:0px; width:15.4px; height:4.8px; background: var(--style-35-bg); opacity:0.6;"></div>
+        <div style="position:absolute; left:24.8px; top:3.8px; width:10.0px; height:3.7px; background: var(--style-35-bg); opacity:0.6;"></div>
+        <div style="position:absolute; left:27.5px; top:7.7px; width:4.7px; height:3.4px; background: var(--style-35-bg); opacity:0.6;"></div>
+        <div style="position:absolute; left:42.5px; top:0.8px; width:24.5px; height:11.5px; border-radius: 1.6px; background: rgba(48,48,48,0.4);">
+          <div style="position:absolute; left:2px; top:1.9px; width:18px; height:7.67px; background: var(--style-34-bg); border: 0px solid #4cd964;"></div>
+          <div style="position:absolute; right:-1.5px; top:3.7px; width:1.5px; height:4px; background: var(--style-35-bg);"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-group" style="position:absolute; left:30px; top:54px; width:225px; height:27px; z-index: 11;">
+      <button id="back-button" aria-label="Back" class="icon-back" style="position:absolute; left:0px; top:4px; width:20px; height:20px; background: var(--color-d9d9d9); border:none; border-radius:4px; padding:0;"></button>
+      <div class="header-title" style="position:absolute; left:89px; top:0px;">Search recipes</div>
+    </div>
+
+    <div class="search-component" style="position:absolute; left:30px; top:98px; width:255px; height:40px; z-index: 5;">
+      <div class="search-bg" style="position:absolute; left:0px; top:0px; width:255px; height:40px;"></div>
+      <div class="search-icon" style="position:absolute; left:10px; top:11px; width:18px; height:18px;"></div>
+      <div class="search-placeholder" style="position:absolute; left:38px; top:11.5px;">Search recipe</div>
+    </div>
+
+    <button id="filter-button" class="filter-button" style="position:absolute; left:305px; top:98px; width:40px; height:40px; z-index: 6;">
+      <span class="filter-icon" style="position:absolute; left:10px; top:10px; width:20px; height:20px;"></span>
+    </button>
+
+    <div class="recent-search" style="position:absolute; left:30px; top:158px; z-index: 4;">Recent Search</div>
+
+    <div class="cards" style="position:absolute; left:30px; top:202px; width:315px; height:645px; z-index: 3;">
+      <div class="card" style="position:absolute; left:0px; top:0px; width:150px; height:150px;">
+        <div class="card-bg"></div>
+        <div class="rating" style="left:103px; top:10px;">
+          <div class="star"></div>
+          <div class="rating-text">4.0</div>
+        </div>
+        <div class="food-title" style="left:10px; top:91px;">Traditional spare ribs baked</div>
+        <div class="creator" style="left:10px; top:128px;">By Chef John</div>
+      </div>
+      <div class="card" style="position:absolute; left:165px; top:0px; width:150px; height:150px;">
+        <div class="card-bg"></div>
+        <div class="rating" style="left:103px; top:10px;">
+          <div class="star"></div>
+          <div class="rating-text">4.0</div>
+        </div>
+        <div class="food-title" style="left:10px; top:91px;">Traditional spare ribs baked</div>
+        <div class="creator" style="left:10px; top:128px;">By Chef John</div>
+      </div>
+      <div class="card" style="position:absolute; left:0px; top:165px; width:150px; height:150px;">
+        <div class="card-bg"></div>
+        <div class="rating" style="left:103px; top:10px;">
+          <div class="star"></div>
+          <div class="rating-text">4.0</div>
+        </div>
+        <div class="food-title" style="left:10px; top:91px;">spice roasted chicken with flavored rice</div>
+        <div class="creator" style="left:10px; top:128px;">By Mark Kelvin</div>
+      </div>
+      <div class="card" style="position:absolute; left:165px; top:165px; width:150px; height:150px;">
+        <div class="card-bg"></div>
+        <div class="rating" style="left:103px; top:10px;">
+          <div class="star"></div>
+          <div class="rating-text">4.0</div>
+        </div>
+        <div class="food-title" style="left:10px; top:91px;">Chinese style Egg fried rice with sliced pork fillet</div>
+        <div class="creator" style="left:10px; top:128px;">By laura wilson</div>
+      </div>
+      <div class="card" style="position:absolute; left:0px; top:330px; width:150px; height:150px;">
+        <div class="card-bg"></div>
+        <div class="rating" style="left:103px; top:10px;">
+          <div class="star"></div>
+          <div class="rating-text">4.0</div>
+        </div>
+        <div class="food-title" style="left:10px; top:91px;">Lamb chops with fruity couscous and mint</div>
+        <div class="creator" style="left:10px; top:128px;">By Spicy Nelly</div>
+      </div>
+      <div class="card" style="position:absolute; left:165px; top:330px; width:150px; height:150px;">
+        <div class="card-bg"></div>
+        <div class="rating" style="left:103px; top:10px;">
+          <div class="star"></div>
+          <div class="rating-text">4.0</div>
+        </div>
+        <div class="food-title" style="left:10px; top:91px;">Lamb chops with fruity couscous and mint</div>
+        <div class="creator" style="left:10px; top:128px;">By Spicy Nelly</div>
+      </div>
+      <div class="card" style="position:absolute; left:0px; top:495px; width:150px; height:150px;">
+        <div class="card-bg"></div>
+        <div class="rating" style="left:103px; top:10px;">
+          <div class="star"></div>
+          <div class="rating-text">4.0</div>
+        </div>
+        <div class="food-title" style="left:10px; top:91px;">spice roasted chicken with flavored rice</div>
+        <div class="creator" style="left:10px; top:128px;">By Mark Kelvin</div>
+      </div>
+      <div class="card" style="position:absolute; left:165px; top:495px; width:150px; height:150px;">
+        <div class="card-bg"></div>
+        <div class="rating" style="left:103px; top:10px;">
+          <div class="star"></div>
+          <div class="rating-text">4.0</div>
+        </div>
+        <div class="food-title" style="left:10px; top:91px;">Chinese style Egg fried rice with sliced pork fillet</div>
+        <div class="creator" style="left:10px; top:128px;">By laura wilson</div>
+      </div>
+    </div>
+
+    <div class="home-indicator" style="position:absolute; left:0px; top:778px; width:375px; height:34px; z-index: 2;">
+      <div class="home-line" style="position:absolute; left:120px; top:21px; width:135px; height:5px;"></div>
+    </div>
+  </div>
+  <!-- End included Search screen -->
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+.search-screen {
+  background-color: var(--style-10-bg);
+  border-radius: var(--style-10-radius);
+}
+
+.time-text {
+  font-family: var(--typo-67-family);
+  font-size: var(--typo-67-size);
+  font-weight: var(--typo-67-weight);
+  line-height: var(--typo-67-line-height);
+  color: var(--typo-67-color);
+}
+
+/* Header */
+.header-title {
+  font-family: var(--typo-81-family);
+  font-size: var(--typo-81-size);
+  font-weight: var(--typo-81-weight);
+  line-height: var(--typo-81-line-height);
+  color: var(--typo-81-color);
+}
+.icon-back {
+  cursor: pointer;
+}
+
+/* Search component */
+.search-bg {
+  width: 255px;
+  height: 40px;
+  background-color: var(--color-ffffff); /* style_53 bg */
+  border: 1.3px solid var(--color-d9d9d9);
+  border-radius: 10px;
+}
+.search-icon {
+  background-color: var(--style-29-bg); /* d9d9d9 */
+  border-radius: 4px;
+}
+.search-placeholder {
+  font-family: var(--typo-65-family);
+  font-size: var(--typo-65-size);
+  font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line-height);
+  color: var(--typo-65-color);
+}
+
+/* Filter button */
+.filter-button {
+  background-color: var(--style-11-bg);
+  border-radius: var(--style-11-radius);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.filter-icon {
+  background-color: var(--color-ffffff); /* icon placeholder contrast */
+  border-radius: 3px;
+}
+
+/* Recent Search label (typo_74) */
+.recent-search {
+  font-family: var(--typo-74-family);
+  font-size: var(--typo-74-size);
+  font-weight: var(--typo-74-weight);
+  line-height: var(--typo-74-line-height);
+  color: var(--typo-74-color);
+}
+
+/* Cards */
+.cards .card .card-bg {
+  position: absolute;
+  left: 0; top: 0;
+  width: 150px; height: 150px;
+  border-radius: 10px; /* style_54 */
+  background: var(--color-a9a9a9); /* underlying placeholder since no image provided */
+  overflow: hidden;
+}
+
+/* Rating pill (style_48) */
+.cards .rating {
+  position: absolute;
+  width: 37px; height: 16px;
+  background: #ffe1b3; /* var mapping from style_48 */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+  padding-left: 7px;
+}
+.cards .rating .star {
+  width: 8px; height: 8px;
+  background: #ffad30; /* style_49 */
+  border-radius: 2px;
+}
+.cards .rating .rating-text {
+  font-family: 'Poppins', sans-serif; /* typo_78 */
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+  color: var(--color-000000);
+}
+
+/* Titles (typo_79) and creators (typo_80) drawn over card */
+.cards .food-title {
+  position: absolute;
+  width: 130px;
+  font-family: var(--typo-79-family);
+  font-size: var(--typo-79-size);
+  font-weight: var(--typo-79-weight);
+  line-height: var(--typo-79-line-height);
+  color: var(--typo-79-color);
+}
+.cards .creator {
+  position: absolute;
+  width: 130px;
+  font-family: var(--typo-80-family);
+  font-size: var(--typo-80-size);
+  font-weight: var(--typo-80-weight);
+  line-height: var(--typo-80-line-height);
+  color: var(--typo-80-color);
+}
+
+/* Home indicator */
+.home-line {
+  background: var(--style-32-bg);
+  border-radius: var(--style-32-radius);
+}
